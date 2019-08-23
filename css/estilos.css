@@ -1,40 +1,117 @@
 /*encabezado*/
-header {
-	background: #3DD1E8;
-	width: 100%;
+
+body{
+	background-image: url("imagenes/fondo.jpg");
+}
+
+header .contenedor{
+	background: #51a0c7;
 	padding: 5px;
 	margin: 5px;
 }
 
-header h1 {
+header .contenedor h1{
+	text-align: center;
 	font-family: Rockwell;
-	color: #2497C5;
+	color: #053d59;
+}
+
+header .menu{
+		background: #c4dbe7;
+		width: 100%;
+}
+
+header .contenedor .menu {
 	text-align: center;
 }
 
-.menu {
-	text-align: center;
-	margin: 5px;
-	padding: 5px;
-	background: #45C7FB;
-	width: 100%;
-}
-
-.menu a {
+header .contenedor .menu a{
 	text-decoration: none;
-	margin: 5px;
+	padding: 2%;
 	font-family: Rockwell;
-	color: #2497C5;
+	color: #053d59;
 }
 
-.menu a:hover {
-	color: rgba(51,51,51,0.9);
+header .contenedor .menu a:hover{
+	height: auto;
+	background: rgba(255,255,255,0.5);
 }
 
 /*contenido*/
-
 main {
-	background: #3DD1E8;
+	background: #51a0c7;
 	padding: 5px;
 	margin: 5px;
 }
+
+/*principal*/
+#Principal {
+	background: #7fddbf;
+	padding: 5px;
+	margin: 5px;
+}
+
+#Principal h2 {
+	text-align: center;
+	font-family: Rockwell;
+}
+
+#Principal p {
+	text-align: justify;
+	font-family: Rockwell;
+}
+
+#Principal img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*secundario*/
+#secundario {
+	background: #7fddbf;
+	padding: 5px;
+	margin: 5px;
+	font-family: Rockwell;
+}
+
+#secundario .contenedor {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#secundario .contenedor article {
+	margin: 5px;
+	padding: 5px;
+	background: #51a0c7;
+	width: 30%;
+	text-align: justify;
+}
+
+#secundario .contenedor article img {
+	width: 100%;
+	height: 350px;
+	border-radius: 50%;
+	border: 2px solid #7fddbf;
+
+}
+
+@media (max-width: 1024px) {
+	#secundario .contenedor article {
+		width: 100%;
+	}
+}
+
+/*footer*/
+footer {
+	background: #51a0c7;
+	padding: 5px;
+	margin: 5px;
+}
+
+footer p {
+	font-family: Rockwell;
+	text-align: center;
+}
+
